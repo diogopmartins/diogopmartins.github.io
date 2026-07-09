@@ -1,0 +1,9 @@
+# Private source materials — do not publish (root only; case-sensitive path)
+/DATA/
+
+# Dependencies & build
+**/node_modules/
+**/dist/
+**/.DS_Store
+*.local
+*.log
