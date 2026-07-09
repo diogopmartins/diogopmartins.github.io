@@ -13,9 +13,41 @@ export function getEmailAddress(): string {
   return `${decode(USER)}${String.fromCharCode(AT)}${decode(HOST)}`
 }
 
-export function openEmail(subject?: string): void {
+function buildMailtoUrl(subject?: string): string {
   const address = getEmailAddress()
   const scheme = ['m', 'a', 'i', 'l', 't', 'o'].join('')
   const query = subject ? `?subject=${encodeURIComponent(subject)}` : ''
-  window.location.href = `${scheme}:${address}${query}`
+  return `${scheme}:${address}${query}`
+}
+
+export function openEmail(subject?: string): void {
+  const url = buildMailtoUrl(subject)
+
+  // Anchor click is more reliable than assigning window.location.href.
+  const link = document.createElement('a')
+  link.href = url
+  link.rel = 'noopener noreferrer'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
+
+export async function copyEmailAddress(): Promise<boolean> {
+  const address = getEmailAddress()
+
+  try {
+    await navigator.clipboard.writeText(address)
+    return true
+  } catch {
+    const input = document.createElement('textarea')
+    input.value = address
+    input.setAttribute('readonly', '')
+    input.style.position = 'fixed'
+    input.style.left = '-9999px'
+    document.body.appendChild(input)
+    input.select()
+    const copied = document.execCommand('copy')
+    document.body.removeChild(input)
+    return copied
+  }
 }

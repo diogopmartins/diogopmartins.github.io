@@ -1,4 +1,5 @@
-import { openEmail } from '../lib/email'
+import { useState } from 'react'
+import { copyEmailAddress, openEmail } from '../lib/email'
 
 type Props = {
   className?: string
@@ -13,17 +14,25 @@ export function EmailButton({
   subject,
   onClickExtra,
 }: Props) {
+  const [label, setLabel] = useState(children)
+
   return (
     <button
       type="button"
       className={className}
-      onClick={() => {
+      onClick={async () => {
         onClickExtra?.()
         openEmail(subject)
+
+        const copied = await copyEmailAddress()
+        if (copied) {
+          setLabel('Email copied — paste into your mail app')
+          window.setTimeout(() => setLabel(children), 3500)
+        }
       }}
       aria-label="Email Diogo Martins"
     >
-      {children}
+      {label}
     </button>
   )
 }
