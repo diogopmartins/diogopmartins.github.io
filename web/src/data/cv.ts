@@ -1,12 +1,12 @@
 export const profile = {
   name: 'Diogo Martins',
   title: 'Clinical Cardiac Scientist',
-  credentials: 'MSc · HCPC · STP Equivalence · ESC EACVI (TTE/TOE)',
+  credentials: 'MSc · HCPC · EACVI TTE and TOE Certification',
   tagline:
-    'Scientist-led TOE & sedation · multimodality imaging · service development · digital health innovation',
+    'Scientist-led TOE with sedation · multimodality imaging · service development · digital health innovation',
   eyebrow: 'Clinical Cardiac Scientist · NHS & digital health',
   seoDescription:
-    'Diogo Martins — Clinical Cardiac Scientist (MSc, HCPC, STP Equivalence, EACVI TTE/TOE). Scientist-led TOE & sedation, structural heart imaging, Cardiac CT & CMR, and founder of MyCardiac.',
+    'Diogo Martins — Clinical Cardiac Scientist (MSc, HCPC, EACVI TTE and TOE Certification). Scientist-led TOE with sedation, structural heart imaging, Cardiac CT & CMR, and founder of MyCardiac.',
   links: {
     github: 'https://github.com/diogopmartins',
     mycardiac: 'https://mycardiac.co.uk',
@@ -16,13 +16,13 @@ export const profile = {
 
 export const summary = [
   'Clinical Cardiac Scientist with 20+ years in echocardiography and cardiac physiology — spanning NHS hospitals, private clinics and CDCs. I combine advanced imaging, service development and digital innovation to improve how cardiology teams work.',
-  'At Northampton General Hospital I established and deliver a rare scientist-led TOE service with scientist-led sedation. At Royal Papworth I supported structural heart procedures including TAVI, ASD/PFO closure, PVL closure and M-TEER. Across eleven clinical sites I also lead stress echo, ACHD imaging, pathway redesign and trainee education — and build MyCardiac to bring AI-assisted planning into NHS cardiology operations.',
+  'At Northampton General Hospital I established and deliver a rare scientist-led TOE service with sedation. At Royal Papworth I supported structural heart procedures including TAVI, ASD/PFO closure, PVL closure and M-TEER. Across eleven clinical sites I also lead stress echo, ACHD imaging, pathway redesign and trainee education — and build MyCardiac to bring AI-assisted planning into NHS cardiology operations.',
 ]
 
 export const strengths = [
-  { title: 'Scientist-led TOE & sedation', detail: 'Rare UK service model at NGH' },
+  { title: 'Scientist-led TOE with sedation', detail: 'Rare UK service model at NGH' },
   { title: 'Structural heart imaging', detail: 'TAVI · ASD/PFO · PVL · M-TEER' },
-  { title: 'Multimodality credentials', detail: 'EACVI TTE/TOE · CT · CMR' },
+  { title: 'Multimodality credentials', detail: 'Full TTE and TOE accreditation · Level 1 CMR and Cardiac CT' },
   { title: 'Digital product', detail: 'Founder, MyCardiac' },
 ]
 
@@ -34,10 +34,10 @@ export const stats = [
 ]
 
 export const clinicalProfile = [
-  'Scientist-led TOE with scientist-led sedation (NGH)',
+  'Scientist-led TOE with sedation (NGH)',
   'Structural heart imaging — TAVI, ASD/PFO, PVL, M-TEER (Papworth)',
-  'EACVI TTE & TOE accredited',
-  'ESC Level 1 Cardiac CT & CMR',
+  'Full TTE and TOE accreditation (EACVI)',
+  'Level 1 CMR and Cardiac CT',
   'Physiology-led stress echo & valve clinic pathways',
   'STP Equivalence · HCPC registered',
   'GCP certified — research echo (UK TAVI, CASPA)',
@@ -104,7 +104,7 @@ export const experience: Experience[] = [
     end: null,
     tags: ['Clinical', 'TOE', 'Leadership'],
     highlights: [
-      'Established and deliver a rare scientist-led TOE service with scientist-led sedation — designing pathways, policy, and governance for safe independent practice.',
+      'Established and deliver a rare scientist-led TOE service with sedation — designing pathways, policy, and governance for safe independent practice.',
       '2D and 3D transthoracic echocardiograms, including ACHD.',
       'Pharmacological stress echo; scientist-led contrast, bubble studies, and IV cannulation.',
       'Mentoring doctors in training, STP and ETP students; weekly echo meeting presentations.',
