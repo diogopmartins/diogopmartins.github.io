@@ -27,10 +27,10 @@ export const strengths = [
 ]
 
 export const stats = [
-  { label: 'Years of experience', value: 20, suffix: '+' },
+  { label: 'Years of experience', value: 20, suffix: '' },
   { label: 'Clinical sites', value: 11, suffix: '' },
   { label: 'EACVI accreditations', value: 2, suffix: '' },
-  { label: 'Imaging modalities', value: 4, suffix: '+' },
+  { label: 'Imaging modalities', value: 4, suffix: '' },
 ]
 
 export const clinicalProfile = [
@@ -39,6 +39,7 @@ export const clinicalProfile = [
   'Full TTE and TOE accreditation (EACVI)',
   'Level 1 CMR and Cardiac CT',
   'Physiology-led stress echo & valve clinic pathways',
+  'Ultrasound IV cannulation',
   'STP Equivalence · HCPC registered',
   'GCP certified — research echo (UK TAVI, CASPA)',
   'Founder — MyCardiac cardiology operations SaaS',
@@ -106,8 +107,8 @@ export const experience: Experience[] = [
     highlights: [
       'Established and deliver a rare scientist-led TOE service with sedation — designing pathways, policy, and governance for safe independent practice.',
       '2D and 3D transthoracic echocardiograms, including ACHD.',
-      'Pharmacological stress echo; scientist-led contrast, bubble studies, and IV cannulation.',
-      'Mentoring doctors in training, STP and ETP students; weekly echo meeting presentations.',
+      'Pharmacological stress echo; scientist-led contrast, bubble studies, and ultrasound IV cannulation.',
+      'Leading echo QA.',
     ],
   },
   {
@@ -120,7 +121,7 @@ export const experience: Experience[] = [
     tags: ['Clinical', 'TOE', 'Education'],
     highlights: [
       '2D and 3D transthoracic echocardiograms, including ACHD.',
-      'Pharmacological stress echo; physiologist-led contrast, bubble studies, and IV cannulation.',
+      'Pharmacological stress echo; physiologist-led contrast, bubble studies, and ultrasound IV cannulation.',
       'Transoesophageal echocardiography; policy writing and groundwork for a scientist-led TOE and sedation service.',
       'Mentoring doctors in training, STP and ETP students; weekly echo meeting presentations.',
     ],
