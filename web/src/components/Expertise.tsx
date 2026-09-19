@@ -23,8 +23,7 @@ export function Expertise() {
           Tools of the trade
         </h2>
         <p className="section__lead">
-          Multimodality imaging platforms, digital product craft, and the collaboration skills that make NHS
-          delivery work.
+          Multimodality imaging platforms and the collaboration skills that make NHS delivery work.
         </p>
       </Reveal>
 
@@ -40,22 +39,14 @@ export function Expertise() {
 
         <Reveal delay={0.12}>
           <div className="expertise__col">
-            <h3>Digital & AI tooling</h3>
-            <ul className="skill-pills">
-              {skills.digital.map((s) => (
-                <li key={s}>{s}</li>
+            <h3>Languages</h3>
+            <ul className="chip-list" style={{ marginTop: '0.75rem' }}>
+              {languages.map((l) => (
+                <li key={l} className="chip">
+                  {l}
+                </li>
               ))}
             </ul>
-            <div style={{ marginTop: '2rem' }}>
-              <h3>Languages</h3>
-              <ul className="chip-list" style={{ marginTop: '0.75rem' }}>
-                {languages.map((l) => (
-                  <li key={l} className="chip">
-                    {l}
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </Reveal>
 

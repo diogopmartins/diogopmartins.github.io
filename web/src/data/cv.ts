@@ -311,16 +311,6 @@ export const skills = {
     '3D Slicer reconstructions',
     'DICOM & PACS workflows',
   ],
-  digital: [
-    'Python',
-    'Flask',
-    'JavaScript',
-    'SQL fundamentals',
-    'API workflows',
-    'LLM-assisted prototyping',
-    'Clinical workflow automation',
-    'NHS digital compliance',
-  ],
   soft: [
     'Cross-functional collaboration',
     'Clinical & digital leadership',
