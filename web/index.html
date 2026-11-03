@@ -1,31 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/brand/logo-mark.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diogo Martins — Clinical Cardiac Scientist | Echocardiography, TOE & Echo Wizard</title>
     <meta
       name="description"
-      content="Diogo Martins — Clinical Cardiac Scientist (MSc, HCPC, EACVI TTE and TOE Certification). Scientist-led TOE with sedation, structural heart imaging, Cardiac CT & CMR, and creator of Echo Wizard, free echocardiography simulators."
+      content="Diogo Martins, Clinical Cardiac Scientist (MSc, HCPC, EACVI TTE and TOE). Scientist-led TOE with sedation, structural heart imaging, Cardiac CT and CMR, and creator of Echo Wizard echocardiography simulators."
     />
     <meta
       name="keywords"
-      content="Clinical Cardiac Scientist, echocardiography, scientist-led TOE, structural heart imaging, TAVI, EACVI, Cardiac CT, CMR, NHS, Echo Wizard, echocardiography simulator, EchoMPR, Diogo Martins"
+      content="Diogo Martins, Clinical Cardiac Scientist, echocardiography, scientist-led TOE, transoesophageal echocardiography, structural heart imaging, TAVI, EACVI, Cardiac CT, CMR, NHS, Echo Wizard, echocardiography simulator, EchoMPR"
     />
     <meta name="author" content="Diogo Martins" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0f4f86" />
     <link rel="canonical" href="https://diogopmartins.github.io/" />
 
-    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/brand/logo-mark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Diogo Martins" />
     <meta property="og:url" content="https://diogopmartins.github.io/" />
     <meta property="og:title" content="Diogo Martins — Clinical Cardiac Scientist" />
     <meta
       property="og:description"
-      content="Scientist-led TOE with sedation · structural heart imaging · multimodality credentials · creator of Echo Wizard echocardiography simulators. Open to echo education and clinical innovation collaborations."
+      content="Scientist-led TOE with sedation · structural heart imaging · EACVI TTE and TOE · Cardiac CT and CMR · creator of Echo Wizard echocardiography simulators."
     />
-    <meta property="og:image" content="https://diogopmartins.github.io/brand/logo-full.png" />
+    <meta property="og:image" content="https://diogopmartins.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Diogo Martins, Clinical Cardiac Scientist" />
     <meta property="og:locale" content="en_GB" />
+    <meta property="profile:first_name" content="Diogo" />
+    <meta property="profile:last_name" content="Martins" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Diogo Martins — Clinical Cardiac Scientist" />
@@ -33,44 +44,119 @@
       name="twitter:description"
       content="Scientist-led TOE with sedation · structural heart imaging · multimodality credentials · creator of Echo Wizard."
     />
-    <meta name="twitter:image" content="https://diogopmartins.github.io/brand/logo-full.png" />
-
-    <title>Diogo Martins — Clinical Cardiac Scientist | Echo, TOE & Digital Health</title>
+    <meta name="twitter:image" content="https://diogopmartins.github.io/og-image.png" />
+    <meta name="twitter:image:alt" content="Diogo Martins, Clinical Cardiac Scientist" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Diogo Martins",
-        "jobTitle": "Clinical Cardiac Scientist",
-        "description": "Clinical Cardiac Scientist specialising in scientist-led TOE with sedation, structural heart imaging, multimodality echocardiography, and echocardiography education software. Creator of Echo Wizard and EchoMPR.",
-        "url": "https://diogopmartins.github.io/",
-        "image": "https://diogopmartins.github.io/brand/logo-mark.png",
-        "sameAs": [
-          "https://github.com/diogopmartins",
-          "https://echo-wizard.com"
-        ],
-        "knowsAbout": [
-          "Echocardiography",
-          "Transoesophageal echocardiography",
-          "Structural heart imaging",
-          "Cardiac CT",
-          "Cardiac MRI",
-          "NHS service development",
-          "Digital health",
-          "Echocardiography simulation"
-        ],
-        "hasCredential": [
-          "MSc Echocardiography",
-          "HCPC CS023232",
-          "EACVI TTE Certification",
-          "EACVI TOE Certification"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://diogopmartins.github.io/#website",
+            "url": "https://diogopmartins.github.io/",
+            "name": "Diogo Martins — Clinical Cardiac Scientist",
+            "inLanguage": "en-GB",
+            "about": { "@id": "https://diogopmartins.github.io/#person" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://diogopmartins.github.io/#profile",
+            "url": "https://diogopmartins.github.io/",
+            "name": "Diogo Martins — CV",
+            "isPartOf": { "@id": "https://diogopmartins.github.io/#website" },
+            "mainEntity": { "@id": "https://diogopmartins.github.io/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://diogopmartins.github.io/#person",
+            "name": "Diogo Martins",
+            "jobTitle": "Clinical Cardiac Scientist",
+            "description": "Clinical Cardiac Scientist specialising in scientist-led TOE with sedation, structural heart imaging and multimodality echocardiography. Creator of Echo Wizard and EchoMPR.",
+            "url": "https://diogopmartins.github.io/",
+            "image": "https://diogopmartins.github.io/brand/logo-mark.png",
+            "knowsLanguage": ["pt", "en"],
+            "worksFor": {
+              "@type": "Hospital",
+              "name": "Northampton General Hospital"
+            },
+            "alumniOf": [
+              { "@type": "CollegeOrUniversity", "name": "Escola Superior de Tecnologia da Saúde de Lisboa" },
+              { "@type": "CollegeOrUniversity", "name": "Escola Superior de Saúde do Vale do Ave" }
+            ],
+            "sameAs": [
+              "https://github.com/diogopmartins",
+              "https://echo-wizard.com"
+            ],
+            "knowsAbout": [
+              "Echocardiography",
+              "Transoesophageal echocardiography",
+              "Stress echocardiography",
+              "Structural heart imaging",
+              "Cardiac CT",
+              "Cardiac MRI",
+              "Adult congenital heart disease imaging",
+              "NHS service development",
+              "Echocardiography education and simulation"
+            ],
+            "hasCredential": [
+              { "@type": "EducationalOccupationalCredential", "name": "MSc Cardiovascular Diagnosis and Intervention — Ultrasound" },
+              { "@type": "EducationalOccupationalCredential", "name": "HCPC registration CS023232" },
+              { "@type": "EducationalOccupationalCredential", "name": "EACVI European Certification — Adult TTE" },
+              { "@type": "EducationalOccupationalCredential", "name": "EACVI European Certification — Adult TOE" },
+              { "@type": "EducationalOccupationalCredential", "name": "ESC Level 1 certification — Cardiac CT" },
+              { "@type": "EducationalOccupationalCredential", "name": "ESC Level 1 certification — CMR" }
+            ]
+          },
+          {
+            "@type": "WebApplication",
+            "name": "Echo Wizard",
+            "url": "https://echo-wizard.com",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "Web browser",
+            "description": "Web-based echocardiography education platform using synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback.",
+            "creator": { "@id": "https://diogopmartins.github.io/#person" }
+          },
+          {
+            "@type": "WebApplication",
+            "name": "EchoMPR",
+            "url": "https://diogopmartins.github.io/EchoMPR/",
+            "applicationCategory": "MedicalApplication",
+            "operatingSystem": "Web browser",
+            "description": "Browser-based 4D echocardiography DICOM viewer with multiplanar reconstruction, cine navigation and 3D volume visualisation, processing files locally.",
+            "creator": { "@id": "https://diogopmartins.github.io/#person" }
+          }
         ]
       }
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static summary for crawlers and no-JavaScript visitors; React replaces it on load. -->
+      <main style="max-width: 720px; margin: 3rem auto; padding: 0 1rem; font-family: system-ui, sans-serif; line-height: 1.6">
+        <h1>Diogo Martins — Clinical Cardiac Scientist</h1>
+        <p>MSc · HCPC CS023232 · EACVI TTE and TOE Certification · ESC Level 1 Cardiac CT and CMR</p>
+        <p>
+          Clinical Cardiac Scientist with 20+ years in echocardiography and cardiac physiology across NHS hospitals.
+          Established a scientist-led TOE service with sedation at Northampton General Hospital and supported structural
+          heart procedures (TAVI, ASD/PFO, PVL closure, M-TEER) at Royal Papworth Hospital.
+        </p>
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <a href="https://echo-wizard.com">Echo Wizard</a> — echocardiography simulation and assessment platform,
+            launched October 2026.
+          </li>
+          <li>
+            <a href="https://diogopmartins.github.io/EchoMPR/">EchoMPR</a> — browser-based 4D echocardiography imaging
+            viewer.
+          </li>
+          <li><a href="https://flightping.app">FlightPing</a> — independent aviation web application.</li>
+          <li>MyCardiac — clinical workflow application (2025–2026, discontinued).</li>
+        </ul>
+        <p><a href="https://github.com/diogopmartins">GitHub</a></p>
+      </main>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
