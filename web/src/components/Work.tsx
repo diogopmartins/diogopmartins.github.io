@@ -37,9 +37,9 @@ export function Work() {
             </>
           )
           return (
-            <Reveal key={p.id} delay={0.06 + i * 0.05}>
+            <Reveal key={p.id} delay={0.06 + i * 0.05} className={p.id === 'echowizard' ? 'work-cards__flagship' : undefined}>
               {p.href ? (
-                <a className="work-card" href={p.href} target="_blank" rel="noreferrer">
+                <a className={`work-card${p.id === 'echowizard' ? ' work-card--flagship' : ''}`} href={p.href} target="_blank" rel="noreferrer">
                   {inner}
                 </a>
               ) : (
@@ -61,8 +61,8 @@ export function Work() {
           </div>
           <div className="contact-band__actions">
             <EmailButton subject="Hello from your website">Email Diogo</EmailButton>
-            <a className="btn btn--ghost-light" href={profile.links.github} target="_blank" rel="noreferrer">
-              GitHub
+            <a className="btn btn--ghost-light" href={profile.links.echowizard} target="_blank" rel="noreferrer">
+              Echo Wizard
             </a>
           </div>
         </div>

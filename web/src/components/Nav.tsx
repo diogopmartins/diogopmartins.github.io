@@ -75,8 +75,8 @@ export function Nav() {
               className="nav__mobile-email"
               onClickExtra={() => setOpen(false)}
             />
-            <a href={profile.links.github} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>
-              GitHub ↗
+            <a href={profile.links.echowizard} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>
+              Echo Wizard ↗
             </a>
           </motion.nav>
         )}

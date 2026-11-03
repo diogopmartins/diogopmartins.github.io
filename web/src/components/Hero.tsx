@@ -98,8 +98,8 @@ export function Hero() {
           animate="show"
         >
           <EmailButton>Start a conversation</EmailButton>
-          <a className="btn btn--ghost" href="#work">
-            Projects
+          <a className="btn btn--ghost" href={profile.links.echowizard} target="_blank" rel="noreferrer">
+            Echo Wizard
           </a>
           <a className="btn btn--ghost" href="#about">
             About me

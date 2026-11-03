@@ -347,8 +347,8 @@ export const nav = [
 export const projects = [
   {
     id: 'echowizard',
-    label: 'Echocardiography simulation and assessment · Launched Oct 2026',
-    title: 'Echo Wizard',
+    label: 'Flagship project · Launched Oct 2026',
+    title: 'Echo Wizard — Echocardiography simulation and assessment',
     desc: 'Created a web-based education platform using synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback. Built practice and assessment modules, user accounts and progress tracking; early launch generated 112 accounts and approximately 2,370 case openings in its first four calendar days.',
     href: 'https://echo-wizard.com',
     linkText: 'echo-wizard.com',
