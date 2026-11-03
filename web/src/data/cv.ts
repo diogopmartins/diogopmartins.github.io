@@ -6,7 +6,7 @@ export const profile = {
     'Scientist-led TOE with sedation · multimodality imaging · service development · echo education and imaging software',
   eyebrow: 'Clinical Cardiac Scientist · NHS & digital health',
   seoDescription:
-    'Diogo Martins — Clinical Cardiac Scientist (MSc, HCPC, EACVI TTE and TOE Certification) with nearly 20 years of experience. Scientist-led TOE with sedation, structural heart imaging, Cardiac CT & CMR, and creator of Echo Wizard, free echocardiography simulators for cardiology staff.',
+    'Diogo Martins — Clinical Cardiac Scientist (MSc, HCPC, EACVI TTE and TOE Certification) with 19 years of experience. Scientist-led TOE with sedation, structural heart imaging, Cardiac CT & CMR, and creator of Echo Wizard, free echocardiography simulators for cardiology staff.',
   links: {
     github: 'https://github.com/diogopmartins',
     echowizard: 'https://echo-wizard.com',
@@ -17,7 +17,7 @@ export const profile = {
 }
 
 export const summary = [
-  'Clinical Cardiac Scientist with nearly 20 years of experience in echocardiography and cardiac physiology — spanning NHS hospitals, private clinics and CDCs. I combine advanced imaging, service development and digital innovation to improve how cardiology teams work.',
+  'Clinical Cardiac Scientist with 19 years of experience in echocardiography and cardiac physiology — spanning NHS hospitals, private clinics and CDCs. I combine advanced imaging, service development and digital innovation to improve how cardiology teams work.',
   'At Northampton General Hospital I established and deliver a rare scientist-led TOE service with sedation. At Royal Papworth I supported structural heart procedures including TAVI, ASD/PFO closure, PVL closure and M-TEER. Across eleven clinical sites I also lead stress echo, ACHD imaging, pathway redesign and trainee education.',
   'Alongside clinical work I build software for echocardiography, including Echo Wizard, an echo simulation and assessment platform, and EchoMPR, a browser-based 4D echo viewer.',
 ]
@@ -30,7 +30,7 @@ export const strengths = [
 ]
 
 export const stats = [
-  { label: 'Years of experience (nearly)', value: 20, suffix: '' },
+  { label: 'Years of experience', value: 19, suffix: '' },
   { label: 'Clinical sites', value: 11, suffix: '' },
   { label: 'EACVI accreditations', value: 2, suffix: '' },
   { label: 'Imaging modalities', value: 4, suffix: '' },
