@@ -3,27 +3,30 @@ export const profile = {
   title: 'Clinical Cardiac Scientist',
   credentials: 'MSc · HCPC · EACVI TTE and TOE Certification',
   tagline:
-    'Scientist-led TOE with sedation · multimodality imaging · service development · digital health innovation',
+    'Scientist-led TOE with sedation · multimodality imaging · service development · echo education and imaging software',
   eyebrow: 'Clinical Cardiac Scientist · NHS & digital health',
   seoDescription:
-    'Diogo Martins — Clinical Cardiac Scientist (MSc, HCPC, EACVI TTE and TOE Certification). Scientist-led TOE with sedation, structural heart imaging, Cardiac CT & CMR, and founder of MyCardiac.',
+    'Diogo Martins — Clinical Cardiac Scientist (MSc, HCPC, EACVI TTE and TOE Certification). Scientist-led TOE with sedation, structural heart imaging, Cardiac CT & CMR, and creator of Echo Wizard, free echocardiography simulators for cardiology staff.',
   links: {
     github: 'https://github.com/diogopmartins',
-    mycardiac: 'https://mycardiac.co.uk',
+    echowizard: 'https://echo-wizard.com',
+    echompr: 'https://diogopmartins.github.io/EchoMPR/',
+    flightping: 'https://flightping.app',
   },
   registration: 'HCPC CS023232',
 }
 
 export const summary = [
   'Clinical Cardiac Scientist with 20+ years in echocardiography and cardiac physiology — spanning NHS hospitals, private clinics and CDCs. I combine advanced imaging, service development and digital innovation to improve how cardiology teams work.',
-  'At Northampton General Hospital I established and deliver a rare scientist-led TOE service with sedation. At Royal Papworth I supported structural heart procedures including TAVI, ASD/PFO closure, PVL closure and M-TEER. Across eleven clinical sites I also lead stress echo, ACHD imaging, pathway redesign and trainee education — and build MyCardiac to bring AI-assisted planning into NHS cardiology operations.',
+  'At Northampton General Hospital I established and deliver a rare scientist-led TOE service with sedation. At Royal Papworth I supported structural heart procedures including TAVI, ASD/PFO closure, PVL closure and M-TEER. Across eleven clinical sites I also lead stress echo, ACHD imaging, pathway redesign and trainee education.',
+  'Outside the clinic I build software for echocardiography. Echo Wizard, launched in October 2026, is a web-based education platform that uses synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback. EchoMPR is a browser-based 4D echo viewer that keeps patient images on the local machine.',
 ]
 
 export const strengths = [
   { title: 'Scientist-led TOE with sedation', detail: 'Rare UK service model at NGH' },
   { title: 'Structural heart imaging', detail: 'TAVI · ASD/PFO · PVL · M-TEER' },
   { title: 'Multimodality credentials', detail: 'Full TTE and TOE accreditation · Level 1 CMR and Cardiac CT' },
-  { title: 'Digital product', detail: 'Founder, MyCardiac' },
+  { title: 'Echo education software', detail: 'Creator, Echo Wizard' },
 ]
 
 export const stats = [
@@ -42,7 +45,7 @@ export const clinicalProfile = [
   'Ultrasound IV cannulation',
   'STP Equivalence · HCPC registered',
   'GCP certified — research echo (UK TAVI, CASPA)',
-  'Founder — MyCardiac cardiology operations SaaS',
+  'Creator — Echo Wizard echocardiography simulators',
 ]
 
 export const workplaces = [
@@ -52,7 +55,6 @@ export const workplaces = [
   'Milton Keynes University Hospital',
   'Royal Papworth Hospital',
   'Kettering General Hospital',
-  'MyCardiac.co.uk',
 ]
 
 export type Experience = {
@@ -82,18 +84,30 @@ export const experience: Experience[] = [
     ],
   },
   {
+    id: 'echowizard',
+    role: 'Creator & Developer',
+    org: 'Echo Wizard — Echocardiography simulation and assessment (echo-wizard.com)',
+    period: 'Launched Oct 2026',
+    start: 2026.8,
+    end: null,
+    tags: ['Product', 'Education'],
+    highlights: [
+      'Created a web-based education platform using synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback.',
+      'Built practice and assessment modules, user accounts and progress tracking; early launch generated 112 accounts and approximately 2,370 case openings in its first four calendar days.',
+      'Free simulators for LV function, RV function, stress echo and the mitral valve, alongside reporting tools for the aorta, prosthetic valves, cardio-oncology and bubble studies.',
+    ],
+  },
+  {
     id: 'mycardiac',
     role: 'Founder & Clinical Product Lead',
-    org: 'mycardiac.co.uk — Cardiology Operations SaaS',
-    period: 'Dec 2024 – Present',
-    start: 2024.9,
-    end: null,
-    tags: ['Product', 'AI', 'SaaS'],
+    org: 'MyCardiac — Clinical workflow application',
+    period: 'Mar 2025 – 2026',
+    start: 2025.2,
+    end: 2026.5,
+    tags: ['Product'],
     highlights: [
-      'Designing a SaaS platform for cardiology workflow optimisation: staff rotas, equipment tracking, clinical governance, and contract compliance.',
-      'Integrating AI-assisted planning and task automation to reduce administrative load in high-pressure NHS environments.',
-      'User requirement discovery across multiple NHS hospitals; translating frontline challenges into scalable digital solutions.',
-      'Leading regulatory, security, and clinical safety documentation for NHS implementation and early Trust pilots.',
+      'Built a hospital workflow application that attracted interest from several departments.',
+      'Evaluated NHS IT governance and deployment costs, then discontinued implementation when investment requirements proved unviable.',
     ],
   },
   {
@@ -325,8 +339,109 @@ export const languages = ['Portuguese', 'English']
 
 export const nav = [
   { id: 'about', label: 'About' },
+  { id: 'echo-wizard', label: 'Echo Wizard' },
   { id: 'experience', label: 'Experience' },
   { id: 'expertise', label: 'Expertise' },
   { id: 'education', label: 'Education' },
-  { id: 'work', label: 'Work' },
+  { id: 'work', label: 'Projects' },
+]
+
+export const echoWizard = {
+  url: 'https://echo-wizard.com',
+  launched: 'Oct 2026',
+  summary:
+    'A web-based education platform that uses synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback.',
+  why: 'Every case is generated from a computer model of a beating heart, so trainees are scored against the true answer rather than an observer’s opinion.',
+  launchStats: [
+    { value: '112', label: 'accounts in the first four calendar days' },
+    { value: '≈2,370', label: 'case openings in the same period' },
+    { value: '4', label: 'free simulators' },
+  ],
+  simulators: [
+    {
+      title: 'LV function',
+      detail: 'Visual EF in 5% ranges with the BSE categories, 17-segment wall motion, coronary territories, Takotsubo, LBBB and HCM.',
+    },
+    {
+      title: 'RV function',
+      detail: 'RV size and hypertrophy, radial and longitudinal function with TAPSE and FAC, septal flattening and McConnell’s sign.',
+    },
+    {
+      title: 'Stress echo',
+      detail: 'Dobutamine stress at rest, low dose, peak and recovery, with WMSI, ischaemia by territory, viability and a structured report.',
+    },
+    {
+      title: 'Mitral valve',
+      detail: 'Regurgitation, stenosis, TEER clips, surgical repair and prosthetic valves, with colour and CW Doppler.',
+    },
+  ],
+  features: [
+    'Practice mode for self-paced learning and an exam mode with a certificate of the level reached',
+    'User accounts with passwordless sign-in and progress tracking',
+    'Pages for STP and ETP trainees, FoCUS and cardiac POCUS',
+    'Reporting tools for the aorta, prosthetic valves, cardio-oncology and BSE bubble studies',
+  ],
+  timeline: [
+    {
+      when: 'Dec 2024',
+      what: 'Started as a set of echo reporting helpers: aortic dimensions and standard report sentences.',
+    },
+    {
+      when: 'Nov 2025',
+      what: 'Added an RV–PA coupling calculator and aortic Z-scores.',
+    },
+    {
+      when: 'Jul 2026',
+      what: 'Mitral Wilkins score and expanded valve report sentences.',
+    },
+    {
+      when: 'Oct 2026',
+      what: 'Cardio-oncology and bubble study tools, a members’ reporting app, and Auto EF in testing.',
+    },
+    {
+      when: 'Late Oct 2026',
+      what: 'Launched the free LV, RV and stress echo simulators; the mitral valve simulator opened on 26 October.',
+    },
+  ],
+  disclaimer:
+    'Educational simulation, to be used under the supervision of a clinical tutor. Not for clinical use, and not a clinical qualification or accreditation.',
+}
+
+export const projects = [
+  {
+    id: 'echompr',
+    label: '4D echocardiography imaging viewer',
+    title: 'EchoMPR',
+    desc: 'Developed a browser-based DICOM imaging application with multiplanar reconstruction, cine navigation and interactive 3D volume visualisation. Designed local file processing to avoid uploading patient images to a server.',
+    href: 'https://diogopmartins.github.io/EchoMPR/',
+    linkText: 'diogopmartins.github.io/EchoMPR',
+    status: 'Live',
+  },
+  {
+    id: 'flightping',
+    label: 'Independent web application · Jul 2026 – Present',
+    title: 'FlightPing',
+    desc: 'Developed and launched an aviation-focused software product, demonstrating independent prototyping, delivery and iteration outside healthcare.',
+    href: 'https://flightping.app',
+    linkText: 'flightping.app',
+    status: 'Live',
+  },
+  {
+    id: 'mycardiac',
+    label: 'Clinical workflow application · Mar 2025 – 2026',
+    title: 'MyCardiac',
+    desc: 'Built a hospital workflow application that attracted interest from several departments; evaluated NHS IT governance and deployment costs, then discontinued implementation when investment requirements proved unviable.',
+    href: null,
+    linkText: null,
+    status: 'Frozen',
+  },
+  {
+    id: 'github',
+    label: 'Open work',
+    title: 'GitHub',
+    desc: 'Clinical workflow utilities and small-scale prototypes, including a Carto3D mesh to STL/WRL converter for 3D printing.',
+    href: 'https://github.com/diogopmartins',
+    linkText: 'github.com/diogopmartins',
+    status: null,
+  },
 ]

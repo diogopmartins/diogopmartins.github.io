@@ -1,4 +1,5 @@
 import { About } from './components/About'
+import { EchoWizard } from './components/EchoWizard'
 import { Education } from './components/Education'
 import { EmailButton } from './components/EmailButton'
 import { Experience } from './components/Experience'
@@ -27,6 +28,7 @@ export default function App() {
         <main>
           <Hero />
           <About />
+          <EchoWizard />
           <Experience />
           <Expertise />
           <Education />
@@ -38,8 +40,11 @@ export default function App() {
           </span>
           <span className="footer__links">
             <EmailButton className="footer__email" />
-            <a href={profile.links.mycardiac} target="_blank" rel="noreferrer">
-              MyCardiac
+            <a href={profile.links.echowizard} target="_blank" rel="noreferrer">
+              Echo Wizard
+            </a>
+            <a href={profile.links.echompr} target="_blank" rel="noreferrer">
+              EchoMPR
             </a>
             <a href={profile.links.github} target="_blank" rel="noreferrer">
               GitHub
