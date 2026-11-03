@@ -1,5 +1,4 @@
 import { About } from './components/About'
-import { EchoWizard } from './components/EchoWizard'
 import { Education } from './components/Education'
 import { EmailButton } from './components/EmailButton'
 import { Experience } from './components/Experience'
@@ -28,7 +27,6 @@ export default function App() {
         <main>
           <Hero />
           <About />
-          <EchoWizard />
           <Experience />
           <Expertise />
           <Education />

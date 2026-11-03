@@ -8,10 +8,10 @@ export function Work() {
       <Reveal>
         <span className="section__label">Beyond the clinic</span>
         <h2 className="section__title" id="work-title">
-          Other projects
+          Projects
         </h2>
         <p className="section__lead">
-          Imaging software, independent products and lessons learned, built alongside frontline echocardiography.
+          Software for echo education and imaging, independent products and lessons learned, built alongside clinical work.
         </p>
       </Reveal>
 
@@ -61,8 +61,8 @@ export function Work() {
           </div>
           <div className="contact-band__actions">
             <EmailButton subject="Hello from your website">Email Diogo</EmailButton>
-            <a className="btn btn--ghost-light" href={profile.links.echowizard} target="_blank" rel="noreferrer">
-              Echo Wizard
+            <a className="btn btn--ghost-light" href={profile.links.github} target="_blank" rel="noreferrer">
+              GitHub
             </a>
           </div>
         </div>

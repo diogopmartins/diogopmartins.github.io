@@ -19,7 +19,7 @@ export const profile = {
 export const summary = [
   'Clinical Cardiac Scientist with 20+ years in echocardiography and cardiac physiology — spanning NHS hospitals, private clinics and CDCs. I combine advanced imaging, service development and digital innovation to improve how cardiology teams work.',
   'At Northampton General Hospital I established and deliver a rare scientist-led TOE service with sedation. At Royal Papworth I supported structural heart procedures including TAVI, ASD/PFO closure, PVL closure and M-TEER. Across eleven clinical sites I also lead stress echo, ACHD imaging, pathway redesign and trainee education.',
-  'Outside the clinic I build software for echocardiography. Echo Wizard, launched in October 2026, is a web-based education platform that uses synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback. EchoMPR is a browser-based 4D echo viewer that keeps patient images on the local machine.',
+  'Alongside clinical work I build software for echocardiography, including Echo Wizard, an echo simulation and assessment platform, and EchoMPR, a browser-based 4D echo viewer.',
 ]
 
 export const strengths = [
@@ -94,7 +94,6 @@ export const experience: Experience[] = [
     highlights: [
       'Created a web-based education platform using synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback.',
       'Built practice and assessment modules, user accounts and progress tracking; early launch generated 112 accounts and approximately 2,370 case openings in its first four calendar days.',
-      'Free simulators for LV function, RV function, stress echo and the mitral valve, alongside reporting tools for the aorta, prosthetic valves, cardio-oncology and bubble studies.',
     ],
   },
   {
@@ -339,75 +338,22 @@ export const languages = ['Portuguese', 'English']
 
 export const nav = [
   { id: 'about', label: 'About' },
-  { id: 'echo-wizard', label: 'Echo Wizard' },
   { id: 'experience', label: 'Experience' },
   { id: 'expertise', label: 'Expertise' },
   { id: 'education', label: 'Education' },
   { id: 'work', label: 'Projects' },
 ]
 
-export const echoWizard = {
-  url: 'https://echo-wizard.com',
-  launched: 'Oct 2026',
-  summary:
-    'A web-based education platform that uses synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback.',
-  why: 'Every case is generated from a computer model of a beating heart, so trainees are scored against the true answer rather than an observer’s opinion.',
-  launchStats: [
-    { value: '112', label: 'accounts in the first four calendar days' },
-    { value: '≈2,370', label: 'case openings in the same period' },
-    { value: '4', label: 'free simulators' },
-  ],
-  simulators: [
-    {
-      title: 'LV function',
-      detail: 'Visual EF in 5% ranges with the BSE categories, 17-segment wall motion, coronary territories, Takotsubo, LBBB and HCM.',
-    },
-    {
-      title: 'RV function',
-      detail: 'RV size and hypertrophy, radial and longitudinal function with TAPSE and FAC, septal flattening and McConnell’s sign.',
-    },
-    {
-      title: 'Stress echo',
-      detail: 'Dobutamine stress at rest, low dose, peak and recovery, with WMSI, ischaemia by territory, viability and a structured report.',
-    },
-    {
-      title: 'Mitral valve',
-      detail: 'Regurgitation, stenosis, TEER clips, surgical repair and prosthetic valves, with colour and CW Doppler.',
-    },
-  ],
-  features: [
-    'Practice mode for self-paced learning and an exam mode with a certificate of the level reached',
-    'User accounts with passwordless sign-in and progress tracking',
-    'Pages for STP and ETP trainees, FoCUS and cardiac POCUS',
-    'Reporting tools for the aorta, prosthetic valves, cardio-oncology and BSE bubble studies',
-  ],
-  timeline: [
-    {
-      when: 'Dec 2024',
-      what: 'Started as a set of echo reporting helpers: aortic dimensions and standard report sentences.',
-    },
-    {
-      when: 'Nov 2025',
-      what: 'Added an RV–PA coupling calculator and aortic Z-scores.',
-    },
-    {
-      when: 'Jul 2026',
-      what: 'Mitral Wilkins score and expanded valve report sentences.',
-    },
-    {
-      when: 'Oct 2026',
-      what: 'Cardio-oncology and bubble study tools, a members’ reporting app, and Auto EF in testing.',
-    },
-    {
-      when: 'Late Oct 2026',
-      what: 'Launched the free LV, RV and stress echo simulators; the mitral valve simulator opened on 26 October.',
-    },
-  ],
-  disclaimer:
-    'Educational simulation, to be used under the supervision of a clinical tutor. Not for clinical use, and not a clinical qualification or accreditation.',
-}
-
 export const projects = [
+  {
+    id: 'echowizard',
+    label: 'Echocardiography simulation and assessment · Launched Oct 2026',
+    title: 'Echo Wizard',
+    desc: 'Created a web-based education platform using synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback. Built practice and assessment modules, user accounts and progress tracking; early launch generated 112 accounts and approximately 2,370 case openings in its first four calendar days.',
+    href: 'https://echo-wizard.com',
+    linkText: 'echo-wizard.com',
+    status: 'Live',
+  },
   {
     id: 'echompr',
     label: '4D echocardiography imaging viewer',
