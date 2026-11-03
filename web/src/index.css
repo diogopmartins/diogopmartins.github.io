@@ -1165,6 +1165,40 @@ img {
   border-bottom: 1px solid var(--line);
 }
 
+.work-cards__flagship {
+  grid-column: 1 / -1;
+}
+
+.work-card--flagship {
+  border-color: var(--accent);
+  border-width: 2px;
+  background: rgba(26, 111, 181, 0.04);
+}
+
+.work-card--flagship .work-card__title {
+  font-size: 1.85rem;
+}
+
+.work-card--static:hover {
+  transform: none;
+  border-color: var(--line);
+  background: transparent;
+}
+
+.work-card__status {
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius);
+  font-size: 0.65rem;
+  background: rgba(26, 111, 181, 0.1);
+  color: var(--brand-deep);
+}
+
+.work-card__status--frozen {
+  background: rgba(107, 127, 147, 0.15);
+  color: var(--muted);
+}
+
 /* ——— Footer ——— */
 .footer {
   width: min(1120px, calc(100% - 2.5rem));

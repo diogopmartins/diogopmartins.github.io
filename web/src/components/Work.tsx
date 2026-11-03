@@ -1,4 +1,4 @@
-import { profile } from '../data/cv'
+import { profile, projects } from '../data/cv'
 import { EmailButton } from './EmailButton'
 import { Reveal } from './Reveal'
 
@@ -8,57 +8,61 @@ export function Work() {
       <Reveal>
         <span className="section__label">Beyond the clinic</span>
         <h2 className="section__title" id="work-title">
-          Building tools for cardiology teams
+          Projects
         </h2>
         <p className="section__lead">
-          From NHS operations SaaS to open clinical workflow utilities — product thinking grounded in frontline
-          imaging practice.
+          Software for echo education and imaging, independent products and lessons learned, built alongside clinical work.
         </p>
       </Reveal>
 
       <div className="work-cards">
-        <Reveal delay={0.08}>
-          <a className="work-card" href={profile.links.mycardiac} target="_blank" rel="noreferrer">
-            <div className="work-card__label">Flagship product</div>
-            <h3 className="work-card__title">MyCardiac</h3>
-            <p className="work-card__desc">
-              Cardiology operations SaaS — rotas, equipment, governance, and AI-assisted planning for NHS
-              departments.
-            </p>
-            <span className="work-card__link">
-              Visit mycardiac.co.uk <span aria-hidden>→</span>
-            </span>
-          </a>
-        </Reveal>
-
-        <Reveal delay={0.14}>
-          <a className="work-card" href={profile.links.github} target="_blank" rel="noreferrer">
-            <div className="work-card__label">Open work</div>
-            <h3 className="work-card__title">GitHub</h3>
-            <p className="work-card__desc">
-              Clinical workflow utilities and small-scale prototypes — practical problem-solving with lightweight
-              software and AI-assisted tooling.
-            </p>
-            <span className="work-card__link">
-              github.com/diogopmartins <span aria-hidden>→</span>
-            </span>
-          </a>
-        </Reveal>
+        {projects.map((p, i) => {
+          const inner = (
+            <>
+              <div className="work-card__label">
+                {p.label}
+                {p.status && (
+                  <span className={`work-card__status work-card__status--${p.status.toLowerCase()}`}>
+                    {p.status}
+                  </span>
+                )}
+              </div>
+              <h3 className="work-card__title">{p.title}</h3>
+              <p className="work-card__desc">{p.desc}</p>
+              {p.linkText && (
+                <span className="work-card__link">
+                  {p.linkText} <span aria-hidden>→</span>
+                </span>
+              )}
+            </>
+          )
+          return (
+            <Reveal key={p.id} delay={0.06 + i * 0.05} className={p.id === 'echowizard' ? 'work-cards__flagship' : undefined}>
+              {p.href ? (
+                <a className={`work-card${p.id === 'echowizard' ? ' work-card--flagship' : ''}`} href={p.href} target="_blank" rel="noreferrer">
+                  {inner}
+                </a>
+              ) : (
+                <div className="work-card work-card--static">{inner}</div>
+              )}
+            </Reveal>
+          )
+        })}
       </div>
 
       <Reveal delay={0.2}>
         <div className="contact-band" id="contact">
           <div>
-            <h2>Let’s talk clinical AI, imaging & service innovation</h2>
+            <h2>Let’s talk echo education, imaging & service innovation</h2>
             <p>
-              Open to health AI research, NHS digital collaborations, and conversations where clinical depth meets
+              Open to training collaborations, NHS digital projects, and conversations where clinical depth meets
               product thinking.
             </p>
           </div>
           <div className="contact-band__actions">
             <EmailButton subject="Hello from your website">Email Diogo</EmailButton>
-            <a className="btn btn--ghost-light" href={profile.links.mycardiac} target="_blank" rel="noreferrer">
-              MyCardiac
+            <a className="btn btn--ghost-light" href={profile.links.echowizard} target="_blank" rel="noreferrer">
+              Echo Wizard
             </a>
           </div>
         </div>

@@ -3,27 +3,30 @@ export const profile = {
   title: 'Clinical Cardiac Scientist',
   credentials: 'MSc · HCPC · EACVI TTE and TOE Certification',
   tagline:
-    'Scientist-led TOE with sedation · multimodality imaging · service development · digital health innovation',
+    'Scientist-led TOE with sedation · multimodality imaging · service development · echo education and imaging software',
   eyebrow: 'Clinical Cardiac Scientist · NHS & digital health',
   seoDescription:
-    'Diogo Martins — Clinical Cardiac Scientist (MSc, HCPC, EACVI TTE and TOE Certification). Scientist-led TOE with sedation, structural heart imaging, Cardiac CT & CMR, and founder of MyCardiac.',
+    'Diogo Martins — Clinical Cardiac Scientist (MSc, HCPC, EACVI TTE and TOE Certification). Scientist-led TOE with sedation, structural heart imaging, Cardiac CT & CMR, and creator of Echo Wizard, free echocardiography simulators for cardiology staff.',
   links: {
     github: 'https://github.com/diogopmartins',
-    mycardiac: 'https://mycardiac.co.uk',
+    echowizard: 'https://echo-wizard.com',
+    echompr: 'https://diogopmartins.github.io/EchoMPR/',
+    flightping: 'https://flightping.app',
   },
   registration: 'HCPC CS023232',
 }
 
 export const summary = [
   'Clinical Cardiac Scientist with 20+ years in echocardiography and cardiac physiology — spanning NHS hospitals, private clinics and CDCs. I combine advanced imaging, service development and digital innovation to improve how cardiology teams work.',
-  'At Northampton General Hospital I established and deliver a rare scientist-led TOE service with sedation. At Royal Papworth I supported structural heart procedures including TAVI, ASD/PFO closure, PVL closure and M-TEER. Across eleven clinical sites I also lead stress echo, ACHD imaging, pathway redesign and trainee education — and build MyCardiac to bring AI-assisted planning into NHS cardiology operations.',
+  'At Northampton General Hospital I established and deliver a rare scientist-led TOE service with sedation. At Royal Papworth I supported structural heart procedures including TAVI, ASD/PFO closure, PVL closure and M-TEER. Across eleven clinical sites I also lead stress echo, ACHD imaging, pathway redesign and trainee education.',
+  'Alongside clinical work I build software for echocardiography, including Echo Wizard, an echo simulation and assessment platform, and EchoMPR, a browser-based 4D echo viewer.',
 ]
 
 export const strengths = [
   { title: 'Scientist-led TOE with sedation', detail: 'Rare UK service model at NGH' },
   { title: 'Structural heart imaging', detail: 'TAVI · ASD/PFO · PVL · M-TEER' },
   { title: 'Multimodality credentials', detail: 'Full TTE and TOE accreditation · Level 1 CMR and Cardiac CT' },
-  { title: 'Digital product', detail: 'Founder, MyCardiac' },
+  { title: 'Echo education software', detail: 'Creator, Echo Wizard' },
 ]
 
 export const stats = [
@@ -42,7 +45,7 @@ export const clinicalProfile = [
   'Ultrasound IV cannulation',
   'STP Equivalence · HCPC registered',
   'GCP certified — research echo (UK TAVI, CASPA)',
-  'Founder — MyCardiac cardiology operations SaaS',
+  'Creator — Echo Wizard echocardiography simulators',
 ]
 
 export const workplaces = [
@@ -52,7 +55,6 @@ export const workplaces = [
   'Milton Keynes University Hospital',
   'Royal Papworth Hospital',
   'Kettering General Hospital',
-  'MyCardiac.co.uk',
 ]
 
 export type Experience = {
@@ -82,18 +84,29 @@ export const experience: Experience[] = [
     ],
   },
   {
+    id: 'echowizard',
+    role: 'Creator & Developer',
+    org: 'Echo Wizard — Echocardiography simulation and assessment (echo-wizard.com)',
+    period: 'Launched Oct 2026',
+    start: 2026.8,
+    end: null,
+    tags: ['Product', 'Education'],
+    highlights: [
+      'Created a web-based education platform using synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback.',
+      'Built practice and assessment modules, user accounts and progress tracking; early launch generated 112 accounts and approximately 2,370 case openings in its first four calendar days.',
+    ],
+  },
+  {
     id: 'mycardiac',
     role: 'Founder & Clinical Product Lead',
-    org: 'mycardiac.co.uk — Cardiology Operations SaaS',
-    period: 'Dec 2024 – Present',
-    start: 2024.9,
-    end: null,
-    tags: ['Product', 'AI', 'SaaS'],
+    org: 'MyCardiac — Clinical workflow application',
+    period: 'Mar 2025 – 2026',
+    start: 2025.2,
+    end: 2026.5,
+    tags: ['Product'],
     highlights: [
-      'Designing a SaaS platform for cardiology workflow optimisation: staff rotas, equipment tracking, clinical governance, and contract compliance.',
-      'Integrating AI-assisted planning and task automation to reduce administrative load in high-pressure NHS environments.',
-      'User requirement discovery across multiple NHS hospitals; translating frontline challenges into scalable digital solutions.',
-      'Leading regulatory, security, and clinical safety documentation for NHS implementation and early Trust pilots.',
+      'Built a hospital workflow application that attracted interest from several departments.',
+      'Evaluated NHS IT governance and deployment costs, then discontinued implementation when investment requirements proved unviable.',
     ],
   },
   {
@@ -328,5 +341,53 @@ export const nav = [
   { id: 'experience', label: 'Experience' },
   { id: 'expertise', label: 'Expertise' },
   { id: 'education', label: 'Education' },
-  { id: 'work', label: 'Work' },
+  { id: 'work', label: 'Projects' },
+]
+
+export const projects = [
+  {
+    id: 'echowizard',
+    label: 'Flagship project · Launched Oct 2026',
+    title: 'Echo Wizard — Echocardiography simulation and assessment',
+    desc: 'Created a web-based education platform using synthetic 3D heart models with known physiological values to generate echo cases, structured assessments and feedback. Built practice and assessment modules, user accounts and progress tracking; early launch generated 112 accounts and approximately 2,370 case openings in its first four calendar days.',
+    href: 'https://echo-wizard.com',
+    linkText: 'echo-wizard.com',
+    status: 'Live',
+  },
+  {
+    id: 'echompr',
+    label: '4D echocardiography imaging viewer',
+    title: 'EchoMPR',
+    desc: 'Developed a browser-based DICOM imaging application with multiplanar reconstruction, cine navigation and interactive 3D volume visualisation. Designed local file processing to avoid uploading patient images to a server.',
+    href: 'https://diogopmartins.github.io/EchoMPR/',
+    linkText: 'diogopmartins.github.io/EchoMPR',
+    status: 'Live',
+  },
+  {
+    id: 'flightping',
+    label: 'Independent web application · Jul 2026 – Present',
+    title: 'FlightPing',
+    desc: 'Developed and launched an aviation-focused software product, demonstrating independent prototyping, delivery and iteration outside healthcare.',
+    href: 'https://flightping.app',
+    linkText: 'flightping.app',
+    status: 'Live',
+  },
+  {
+    id: 'mycardiac',
+    label: 'Clinical workflow application · Mar 2025 – 2026',
+    title: 'MyCardiac',
+    desc: 'Built a hospital workflow application that attracted interest from several departments; evaluated NHS IT governance and deployment costs, then discontinued implementation when investment requirements proved unviable.',
+    href: null,
+    linkText: null,
+    status: 'Frozen',
+  },
+  {
+    id: 'github',
+    label: 'Open work',
+    title: 'GitHub',
+    desc: 'Clinical workflow utilities and small-scale prototypes, including a Carto3D mesh to STL/WRL converter for 3D printing.',
+    href: 'https://github.com/diogopmartins',
+    linkText: 'github.com/diogopmartins',
+    status: null,
+  },
 ]

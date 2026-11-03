@@ -11,7 +11,7 @@ export function About() {
           Clinical depth. Operational clarity. Digital ambition.
         </h2>
         <p className="section__lead">
-          A rare mix of hands-on echocardiography, NHS service leadership and product thinking for health AI.
+          A rare mix of hands-on echocardiography, NHS service leadership and software built for echo teams and trainees.
         </p>
       </Reveal>
 
