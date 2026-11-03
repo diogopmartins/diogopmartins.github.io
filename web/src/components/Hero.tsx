@@ -99,7 +99,7 @@ export function Hero() {
         >
           <EmailButton>Start a conversation</EmailButton>
           <a className="btn btn--ghost" href={profile.links.echowizard} target="_blank" rel="noreferrer">
-            Echo Wizard
+            Echo Wizard App
           </a>
           <a className="btn btn--ghost" href="#about">
             About me
